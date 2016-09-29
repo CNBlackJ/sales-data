@@ -1,0 +1,42 @@
+<div class="index-content">
+  <div class="index-target ">
+    <p class="middle-padding-top">目标</p>
+    <p class="max-font"><%= @goal_sum %></p>
+    <div class="min-padding">
+      <div class="float-block">
+        <p>已完成</p>
+        <p class="middle-font"><%= @finish_sum %></p>
+      </div>
+      <div></div>
+      <div class="float-block">
+        <p>完成率</p>
+        <p class="middle-font"><%= @percent %>%</p>
+      </div>
+    </div>
+  </div>
+  <div class="index-select">
+    <div class="float-block"><a>日</a></div>
+    <div class="float-block"><a class="solid-thread">周</a></div>
+    <div class="float-block"><a class="solid-thread">月</a></div>
+    <div class="float-block"><a class="solid-thread">年</a></div>
+  </div>
+  <div class="index-report">
+
+  </div>
+  <div class="index-table">
+    <ul>
+      <li>项目</li>
+      <li>月度目标</li>
+      <li>完成度</li>
+      <li class="width-10"></li>
+    </ul>
+    <% @fix_goal.each do |goal| %>
+        <ul>
+          <li><%= goal[:name] %></li>
+          <li><%= goal[:goal] %></li>
+          <li><%= goal[:percent]%>%</li>
+          <li class="width-10"><%= link_to ">>", report_show_path(:name => goal[:name]) %></li>
+        </ul>
+    <% end %>
+  </div>
+</div>

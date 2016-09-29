@@ -1,0 +1,29 @@
+<%= form_for :daily_amount, url: daily_sales_add_path do |f| %>
+    <ul class="form-amount">
+      <% @platforms.each do |platform| %>
+          <li class="amount">
+            <div class="label"><%= f.label :platform, platform[:label] %></div>
+            <div class="form-input">
+              <%= f.text_field :platform, :id => platform[:id],
+                               :value => 0, :class => 'amount', placeholder: platform[:label] %>
+            </div>
+          </li>
+      <% end %>
+    </ul>
+    <%= f.submit "保存", class: 'submit', id: 'btn_save_dis', disabled: true %>
+    <%= f.submit "保存", class: 'submit', id: 'btn_save' %>
+<% end %>
+
+<% if notice %>
+    <div id="save_success">
+      保存成功
+    </div>
+    <script language="javascript" type="text/javascript">
+      // 以下方式定时跳转
+      setTimeout("javascript:location.href='index'", 1000);
+    </script>
+<% end %>
+
+
+
+

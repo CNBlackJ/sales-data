@@ -1,0 +1,22 @@
+<div class="index-table">
+  <button id="date" class="select">
+    <%= @time %>
+  </button>
+  <button id="load_target" class="button">
+    导入上月目标
+  </button>
+  <%= form_for :projects, url: report_add_path do |f| %>
+      <% @projects.each do |project| %>
+          <ul id="<%= project %>">
+            <li class="li-30"><%= project %></li>
+            <li class="li-70">
+              <input id="<%= project %>" type="text" name="projects[<%= project %>]">
+            </li>
+          </ul>
+      <% end %>
+      <div class="text">温馨提示:保存后将无法更改</div>
+      <button class="submit" type="submit" id="btn_save">
+        保存
+      </button>
+  <% end %>
+</div>

@@ -1,0 +1,10 @@
+<ul class="table-list">
+  <% @projects.each do |project| %>
+      <li class="project" id="<%= project[:id] %>">
+        <%= link_to "/daily_sales/add?name="+project[:id] do %>
+            <%= project[:label] %>
+            <span class="pull-right"></span>
+        <% end %>
+      </li>
+  <% end %>
+</ul>

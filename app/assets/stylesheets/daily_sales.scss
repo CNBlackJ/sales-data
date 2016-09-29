@@ -1,0 +1,75 @@
+// Place all the styles related to the daily_sales controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+//= require _bootstrap
+.index-table {
+
+  ul {
+    margin-bottom: 60px;
+    background-color: white;
+    height: 130px;
+    line-height: 130px;
+    border-bottom: 1px solid #BBBBBB;
+    li {
+      text-align: left;
+      float: left;
+      font-size: 3em;
+      input {
+        background-color: #F7F7F7;
+        width: 90%;
+        height: 90px;
+        font-size: 1em;
+        border: 0px;
+      }
+
+    }
+    .li-80 {
+      width: 80%;
+    }
+    .li-20 {
+      width: 20%;
+    }
+    .li-70 {
+      width: 70%;
+    }
+    .li-30 {
+      width: 30%;
+    }
+  }
+  .hidden-input {
+    background: transparent;
+    border: 0;
+    color: transparent;
+  }
+  .submit {
+    font-size: 3em;
+    background-color: #0076FF;
+    width: 100%;
+    height: 130px;
+    color: white;
+  }
+  .button {
+    font-size: 3em;
+    background-color: #0076FF;
+    width: 40%;
+    height: 130px;
+    color: white;
+    margin: 30px 4%;
+  }
+  .select {
+    font-size: 3em;
+    background-color: #54C7FC;
+    width: 43%;
+    height: 130px;
+    color: white;
+    margin: 30px 4%;
+  }
+  .text {
+    font-size: 3em;
+    color: #767676;
+    text-align: center;
+    margin: 100px;
+  }
+
+}

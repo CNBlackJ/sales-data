@@ -1,0 +1,85 @@
+// Place all the styles related to the report controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.index-content {
+  text-align: center;
+  .index-target {
+    background-color: #0076FF;
+    height: 450px;
+    p {
+      color: #CACBCD;
+      padding: 10px;
+      font-size: 2em;
+    }
+    .max-font {
+      color: white;
+      font-size: 6em;
+    }
+    .middle-font {
+      color: white;
+      font-size: 4em;
+    }
+    .min-padding {
+      padding: 30px;
+
+    }
+    .middle-padding-top {
+      padding-top: 60px;
+
+    }
+    .float-block {
+      float: left;
+      width: 49%;
+      height: 150px;
+    }
+
+  }
+  .index-select {
+    height: 80px;
+    border-bottom: 1px solid;
+    .float-block {
+      float: left;
+      width: 25%;
+      height: 60px;
+      font-size: 3em;
+      margin: 15px 0;
+      background-color: #FAFAFA;
+    }
+    .solid-thread {
+      width: 100%;
+      display: block;
+      border-left: 1px solid #2E2F30;
+      //border-right: 5px solid #2E2F30;
+    }
+  }
+  .index-report {
+    height: 800px;
+    background-color: white;
+    border-bottom: 1px solid #999999;
+  }
+  .index-table {
+    margin-top: 30px;
+    height: 800px;
+    background-color: white;
+    ul {
+      height: 130px;
+      line-height: 130px;
+      border-bottom: 1px solid #BBBBBB;
+      li {
+        text-align: left;
+        float: left;
+        font-size: 3em;
+        width: 30%;
+      }
+
+    }
+    .width-10 {
+      width: 10%;
+      color: #BBBBBB;
+    }
+    .width-35 {
+      width: 35%;
+    }
+  }
+}
